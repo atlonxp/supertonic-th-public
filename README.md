@@ -1,10 +1,10 @@
 # Supertonic 3 for Thai 🇹🇭
 
-**Lightning-fast, on-device, multilingual TTS — now speaking Thai + English, running natively via ONNX.**
+**Lightning-fast, on-device, multilingual TTS — 32 languages, now including Thai, running natively via ONNX.**
 
 _Created by **Watthanasak Jeamwatthanachai**, PhD · EMBA · C\|CISO_
 
-We successfully adapted [Supertone's Supertonic 3](https://huggingface.co/Supertone/supertonic-3) to speak **Thai** with seamless **Thai ⇄ English code-switching** in a single utterance — while preserving the original model's native-quality English and its tiny, on-device ONNX runtime.
+We added **Thai** as the **32nd language** to [Supertone's Supertonic 3](https://huggingface.co/Supertone/supertonic-3) — joining its 31 existing languages **without degrading any of them**. The samples below showcase seamless **Thai ⇄ English code-switching** in a single utterance, on-device via ONNX.
 
 This repository is a **showcase**: listen to the samples below. An interactive demo is coming soon.
 
@@ -41,8 +41,9 @@ The same model speaks the same text three ways — pick whichever sounds most na
 
 ## ✨ What works
 
+- ✅ **32 languages** — all 31 of Supertonic 3's original languages preserved, with Thai added as the 32nd.
+- ✅ **Adding Thai degraded none** of the original languages — they remain at native quality.
 - ✅ **Thai + English in a single utterance** — natural code-switching, no stitching.
-- ✅ **Native-quality English retained** — adding Thai did not degrade the original English.
 - ✅ **Multiple voices** — male and female, with voice identity preserved across languages.
 - ✅ **On-device** — runs natively via ONNX, no cloud required.
 - ✅ **44.1 kHz** output.
