@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Supertonic 3 for Thai — TTS Showcase</title>
+<meta name="description" content="Lightning-fast, on-device, multilingual TTS — now speaking Thai + English, running natively via ONNX." />
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2230; --border:#2a3240;
+    --ink:#e6edf3; --muted:#9aa7b4; --accent:#f0526b; --accent2:#3b82f6; --ok:#3fb950;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1100px 520px at 50% -8%,#1a2030 0%,var(--bg) 60%);
+    color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Thai",Helvetica,Arial,sans-serif;
+    min-height:100vh;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:56px 22px 80px}
+  header{text-align:center;margin-bottom:40px}
+  .flag{font-size:46px;line-height:1}
+  h1{font-size:clamp(28px,5vw,42px);margin:14px 0 8px;font-weight:800;letter-spacing:-.02em}
+  .tag{color:var(--muted);font-size:clamp(15px,2.4vw,19px);max-width:640px;margin:0 auto}
+  .lead{max-width:680px;margin:22px auto 0;color:#c6d0da}
+  .demo-text{
+    background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+    padding:18px 20px;margin:34px 0 10px;
+  }
+  .demo-text .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .demo-text .th{font-size:19px;color:#fff}
+  .demo-text .en{font-style:italic;color:#c6d0da}
+  h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+     margin:46px 0 16px;border-bottom:1px solid var(--border);padding-bottom:10px}
+  .voices{display:grid;gap:18px}
+  .voice{
+    background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);
+    border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;
+  }
+  .voice h3{margin:0 0 14px;font-size:18px;display:flex;align-items:center;gap:10px}
+  .voice h3 .pill{font-size:11px;font-weight:600;color:var(--muted);background:#0d1117;
+     border:1px solid var(--border);border-radius:999px;padding:3px 9px}
+  .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:620px){.modes{grid-template-columns:1fr}}
+  .mode .m-label{font-size:13px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+  .mode .m-sub{font-size:11.5px;color:var(--muted);margin:0 0 8px}
+  audio{width:100%;height:36px}
+  .legend{display:grid;gap:10px;margin-top:6px}
+  .legend .row{display:flex;gap:10px;align-items:baseline;color:#c6d0da;font-size:14.5px}
+  .legend code{background:#0d1117;border:1px solid var(--border);border-radius:6px;padding:1px 7px;color:#fff;font-size:13px}
+  ul.works{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+  ul.works li{padding-left:26px;position:relative;color:#c6d0da}
+  ul.works li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+  footer{margin-top:54px;padding-top:22px;border-top:1px solid var(--border);
+     color:var(--muted);font-size:13.5px;text-align:center}
+  footer a{color:var(--accent2);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  .soon{display:inline-block;margin-top:6px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="flag">🇹🇭</div>
+    <h1>Supertonic 3 for Thai</h1>
+    <p class="tag">Lightning-fast, on-device, multilingual TTS — now speaking Thai&nbsp;+&nbsp;English, running natively via ONNX.</p>
+    <p class="lead">We adapted <a href="https://huggingface.co/Supertone/supertonic-3" style="color:var(--accent2)">Supertone's Supertonic&nbsp;3</a> to speak <b>Thai</b> with seamless <b>Thai&nbsp;⇄&nbsp;English code-switching</b> in a single utterance — while preserving the original's native-quality English and its tiny on-device runtime.</p>
+  </header>
+
+  <div class="demo-text">
+    <div class="label">Every clip below speaks the same mixed line</div>
+    <div class="th">สวัสดีครับ ผมชื่อสมชาย และผมชอบเรียนภาษาไทย</div>
+    <div class="en">“A gentle breeze moved through the open window while everyone listened to the story.”</div>
+  </div>
+
+  <h2>Listen</h2>
+  <div class="voices">
+
+    <div class="voice">
+      <h3>F1 <span class="pill">female</span></h3>
+      <div class="modes">
+        <div class="mode"><div class="m-label">🇹🇭 Thai-native</div><p class="m-sub">th</p><audio controls preload="none" src="samples/th_F1.wav"></audio></div>
+        <div class="mode"><div class="m-label">🇬🇧 English-native</div><p class="m-sub">en</p><audio controls preload="none" src="samples/en_F1.wav"></audio></div>
+        <div class="mode"><div class="m-label">🌐 Neutral bilingual</div><p class="m-sub">na</p><audio controls preload="none" src="samples/na_F1.wav"></audio></div>
+      </div>
+    </div>
+
+    <div class="voice">
+      <h3>M1 <span class="pill">male</span></h3>
+      <div class="modes">
+        <div class="mode"><div class="m-label">🇹🇭 Thai-native</div><p class="m-sub">th</p><audio controls preload="none" src="samples/th_M1.wav"></audio></div>
+        <div class="mode"><div class="m-label">🇬🇧 English-native</div><p class="m-sub">en</p><audio controls preload="none" src="samples/en_M1.wav"></audio></div>
+        <div class="mode"><div class="m-label">🌐 Neutral bilingual</div><p class="m-sub">na</p><audio controls preload="none" src="samples/na_M1.wav"></audio></div>
+      </div>
+    </div>
+
+    <div class="voice">
+      <h3>F3 <span class="pill">female</span></h3>
+      <div class="modes">
+        <div class="mode"><div class="m-label">🇹🇭 Thai-native</div><p class="m-sub">th</p><audio controls preload="none" src="samples/th_F3.wav"></audio></div>
+        <div class="mode"><div class="m-label">🇬🇧 English-native</div><p class="m-sub">en</p><audio controls preload="none" src="samples/en_F3.wav"></audio></div>
+        <div class="mode"><div class="m-label">🌐 Neutral bilingual</div><p class="m-sub">na</p><audio controls preload="none" src="samples/na_F3.wav"></audio></div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Language modes</h2>
+  <div class="legend">
+    <div class="row"><code>th</code> Thai-native speaker — Thai is flawless; English carries a light Thai accent.</div>
+    <div class="row"><code>en</code> English-native bilingual — English is flawless; Thai carries a light English accent.</div>
+    <div class="row"><code>na</code> Neutral bilingual — cleanest “professional bilingual” delivery across both languages.</div>
+  </div>
+
+  <h2>What works</h2>
+  <ul class="works">
+    <li>Thai + English in a single utterance — natural code-switching, no stitching.</li>
+    <li>Native-quality English retained — adding Thai did not degrade the original English.</li>
+    <li>Multiple voices — male and female, with voice identity preserved across languages.</li>
+    <li>On-device — runs natively via ONNX, no cloud required.</li>
+    <li>44.1&nbsp;kHz output.</li>
+  </ul>
+
+  <h2>Interactive demo</h2>
+  <p class="soon">Coming soon — type your own Thai/English text and hear it live.</p>
+
+  <footer>
+    Built on <a href="https://huggingface.co/Supertone/supertonic-3">Supertonic&nbsp;3</a> by
+    <a href="https://supertone.ai">Supertone&nbsp;Inc.</a> (base model: OpenRAIL-M).
+    Audio samples © 2026 atlonxp, released under
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC&nbsp;BY-NC&nbsp;4.0</a>.
+    &nbsp;·&nbsp; <a href="https://github.com/atlonxp/supertonic-th-public">Source on GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

@@ -6,6 +6,9 @@ We successfully adapted [Supertone's Supertonic 3](https://huggingface.co/Supert
 
 This repository is a **showcase**: listen to the samples below. An interactive demo is coming soon.
 
+> ### 🔊 [**▶ Play the samples inline on the showcase page →**](https://atlonxp.github.io/supertonic-th-public/)
+> Best experience with built-in audio players. The links below also work (each opens GitHub's player on the file page).
+
 ---
 
 ## 🎧 Listen
@@ -20,28 +23,7 @@ Every clip below speaks the **same mixed Thai + English line**:
 | **M1** (male)   | [▶ play](samples/th_M1.wav) | [▶ play](samples/en_M1.wav) | [▶ play](samples/na_M1.wav) |
 | **F3** (female) | [▶ play](samples/th_F3.wav) | [▶ play](samples/en_F3.wav) | [▶ play](samples/na_F3.wav) |
 
-<details>
-<summary><b>Inline players</b> (click to expand — plays where your viewer supports it)</summary>
-
-**F1 — 🇹🇭 / 🇬🇧 / 🌐**
-
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/th_F1.wav"></audio>
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/en_F1.wav"></audio>
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/na_F1.wav"></audio>
-
-**M1 — 🇹🇭 / 🇬🇧 / 🌐**
-
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/th_M1.wav"></audio>
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/en_M1.wav"></audio>
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/na_M1.wav"></audio>
-
-**F3 — 🇹🇭 / 🇬🇧 / 🌐**
-
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/th_F3.wav"></audio>
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/en_F3.wav"></audio>
-<audio controls src="https://raw.githubusercontent.com/atlonxp/supertonic-th-public/main/samples/na_F3.wav"></audio>
-
-</details>
+_For inline players, open the **[showcase page](https://atlonxp.github.io/supertonic-th-public/)**._
 
 ---
 
