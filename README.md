@@ -2,6 +2,8 @@
 
 **Lightning-fast, on-device, multilingual TTS — now speaking Thai + English, running natively via ONNX.**
 
+_Created by **Watthanasak Jeamwatthanachai**, PhD · EMBA · C\|CISO_
+
 We successfully adapted [Supertone's Supertonic 3](https://huggingface.co/Supertone/supertonic-3) to speak **Thai** with seamless **Thai ⇄ English code-switching** in a single utterance — while preserving the original model's native-quality English and its tiny, on-device ONNX runtime.
 
 This repository is a **showcase**: listen to the samples below. An interactive demo is coming soon.
@@ -54,5 +56,7 @@ Coming soon — a live, in-browser demo where you can type your own Thai/English
 ---
 
 ## 📄 About & license
+
+Created by **Watthanasak Jeamwatthanachai**, PhD · EMBA · C\|CISO.
 
 Built on top of [Supertonic 3](https://huggingface.co/Supertone/supertonic-3) by [Supertone Inc.](https://supertone.ai) The base model is released under **OpenRAIL-M**. The audio in this repository consists of outputs from our Thai-adapted model and is provided for demonstration under the terms in [`LICENSE`](LICENSE).
